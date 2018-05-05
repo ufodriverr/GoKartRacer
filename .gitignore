@@ -1,0 +1,9 @@
+Library/
+obj/
+Packages/
+Temp/
+UnityPackageManager/
+ActionPlatformerCardGame.sln
+ActionPlatformerCardGame.userprefs
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
