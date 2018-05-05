@@ -10,12 +10,12 @@ public class CameraControl : MonoBehaviour {
 
 	void FixedUpdate () {
 		transform.position = Vector3.Lerp (transform.position,TargetPos.position,LerpSpeed);
-		transform.LookAt (LookAt.position);
-		/*Quaternion Rot = transform.rotation;
+		//transform.LookAt (LookAt.position);
+		Quaternion Rot = transform.rotation;
 		transform.LookAt (LookAt.position);
 		Quaternion RemRot = transform.rotation;
 		transform.rotation = Rot;
-		transform.rotation = Quaternion.Lerp (transform.rotation,RemRot,LerpSpeed);*/
+		transform.rotation = Quaternion.Lerp (transform.rotation,RemRot,LerpSpeed);
 
 	}
 }

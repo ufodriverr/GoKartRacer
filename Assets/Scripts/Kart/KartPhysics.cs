@@ -75,7 +75,9 @@ public class KartPhysics : MonoBehaviour {
 				EnableTrails (false);
 			}
 			driftTimer = 0;
-			KartRef.BoostVisual.fillAmount = 0.01f;
+			if (KartRef.BoostVisual) {
+				KartRef.BoostVisual.fillAmount = 0.01f;
+			}
 			BoostedTimes = 0;
 		}
 
@@ -111,7 +113,7 @@ public class KartPhysics : MonoBehaviour {
 			//Forward : Backward
 			float desiredZvel = curVelLocal.z + KartRef.KartParams.CurAcceleration * ZAxis;
 			float desiredZvelABS = Mathf.Abs (desiredZvel);
-			if (curVelLocal.z > 0) {
+			if (ZAxis > 0) {
 				if (desiredZvelABS <= KartRef.KartParams.CurMaxSpeed) {
 					curVelLocal.z = desiredZvel;
 				} else {
@@ -135,6 +137,8 @@ public class KartPhysics : MonoBehaviour {
 
 			if (Mathf.Abs (curVelLocal.z) > 0.2f) {
 				curAngularVel.y = KartRef.KartParams.CurTurnSpeed * RotateAxis * zsign * Mathf.Clamp (Mathf.Abs (curVelLocal.z / (30f / 6)), 0.6f, 1f);
+			} else {
+				curAngularVel.y = 0;
 			}
 			//Jump
 			if (Jump && Grounded) {
