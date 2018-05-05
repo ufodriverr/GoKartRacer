@@ -148,9 +148,10 @@ GameObject:
   - component: {fileID: 114458156618255818}
   - component: {fileID: 114019008275221390}
   - component: {fileID: 114759412102715684}
+  - component: {fileID: 114009442143527346}
   m_Layer: 0
   m_Name: KartWithAI
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -355,7 +356,7 @@ GameObject:
   - component: {fileID: 64853361411791058}
   m_Layer: 0
   m_Name: collider
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,7 +1105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135546780918302}
   m_LocalRotation: {x: -0, y: 0.6743349, z: -0, w: 0.7384258}
-  m_LocalPosition: {x: -34.869, y: 0.182, z: 60.944}
+  m_LocalPosition: {x: -32.1, y: 0.182, z: 59.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4423238908092534}
@@ -1792,7 +1793,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1887,7 +1888,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1982,7 +1983,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2443,6 +2444,17 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &114009442143527346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135546780918302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3ec3b8b9845f6458f0d747b0c1d7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114019008275221390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2454,6 +2466,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f17ec9c34c63ff4d8315d8a12be3b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Nodes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114254816959268738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2469,7 +2515,7 @@ MonoBehaviour:
   BackButton: 115
   TurnRightButton: 100
   TurnLeftButton: 97
-  BrakeButton: 306
+  UseItemButton: 306
   JumpButton: 32
   BoostButton: 304
 --- !u!114 &114330898969581400
@@ -2531,6 +2577,7 @@ MonoBehaviour:
   KartParams: {fileID: 114330898969581400}
   KartEffects: {fileID: 114458156618255818}
   KartPhysics: {fileID: 114759412102715684}
+  KartItem: {fileID: 0}
   RigidBody: {fileID: 54347220563158548}
   Animator: {fileID: 95186513890597912}
   Wheels:
@@ -2577,7 +2624,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZAxis: 0
   RotateAxis: 0
-  Brake: 0
   Jump: 0
   Grounded: 1
   LostControll: 0

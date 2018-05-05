@@ -10,7 +10,7 @@ public class KartInputs : MonoBehaviour {
 	public KeyCode BackButton = KeyCode.S;
 	public KeyCode TurnRightButton = KeyCode.D;
 	public KeyCode TurnLeftButton = KeyCode.A;
-	public KeyCode BrakeButton = KeyCode.LeftControl;
+	public KeyCode UseItemButton = KeyCode.LeftControl;
 	public KeyCode JumpButton = KeyCode.Space;
 	public KeyCode BoostButton = KeyCode.LeftShift;
 

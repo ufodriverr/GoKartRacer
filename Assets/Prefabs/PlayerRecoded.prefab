@@ -442,6 +442,7 @@ GameObject:
   - component: {fileID: 114390422383496628}
   - component: {fileID: 114730486435462372}
   - component: {fileID: 114867979283303360}
+  - component: {fileID: 114998381528523970}
   m_Layer: 0
   m_Name: PlayerRecoded
   m_TagString: Player
@@ -1425,7 +1426,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510246318023432}
   m_LocalRotation: {x: -0, y: 0.6743349, z: -0, w: 0.7384258}
-  m_LocalPosition: {x: -34.869, y: 0.182, z: 60.944}
+  m_LocalPosition: {x: -32.782608, y: 0.182, z: 62.841022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4065803551637324}
@@ -1792,7 +1793,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1887,7 +1888,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1982,7 +1983,7 @@ AudioSource:
   Priority: 131
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2470,6 +2471,7 @@ MonoBehaviour:
   KartParams: {fileID: 114630017760597476}
   KartEffects: {fileID: 114390422383496628}
   KartPhysics: {fileID: 114867979283303360}
+  KartItem: {fileID: 0}
   RigidBody: {fileID: 54167542377767734}
   Animator: {fileID: 95409170640505034}
   Wheels:
@@ -2518,7 +2520,7 @@ MonoBehaviour:
   BackButton: 115
   TurnRightButton: 100
   TurnLeftButton: 97
-  BrakeButton: 306
+  UseItemButton: 306
   JumpButton: 32
   BoostButton: 304
 --- !u!114 &114630017760597476
@@ -2577,7 +2579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZAxis: 0
   RotateAxis: 0
-  Brake: 0
   Jump: 0
   Grounded: 1
   LostControll: 0
@@ -2595,6 +2596,17 @@ MonoBehaviour:
   SBoostPercent2T: 0.5
   BoostPercent: 1.5
   BoostPercentT: 1
+--- !u!114 &114998381528523970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510246318023432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3ec3b8b9845f6458f0d747b0c1d7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137470181860654224
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

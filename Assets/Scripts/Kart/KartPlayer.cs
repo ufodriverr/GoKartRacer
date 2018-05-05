@@ -21,7 +21,7 @@ public class KartPlayer : MonoBehaviour {
 
 		//Convert.ToInt16 ();
 		KartRef.KartPhysics.ZAxis = Convert.ToInt16 (Input.GetKey(KartRef.KartInputs.ForwardButton)) - Convert.ToInt16 (Input.GetKey(KartRef.KartInputs.BackButton));
-		KartRef.KartPhysics.Brake = Input.GetKey (KartRef.KartInputs.BrakeButton);
+		//KartRef.KartPhysics.Brake = Input.GetKey (KartRef.KartInputs.BrakeButton);
 		KartRef.KartPhysics.RotateAxis = Convert.ToInt16 (Input.GetKey(KartRef.KartInputs.TurnRightButton)) - Convert.ToInt16 (Input.GetKey(KartRef.KartInputs.TurnLeftButton));
 		KartRef.SpeedText.text = Mathf.Round (KartRef.KartPhysics.curVelLocal.magnitude*6f).ToString()+" km/h";
 
@@ -40,6 +40,9 @@ public class KartPlayer : MonoBehaviour {
 			KartRef.KartPhysics.Drift = false;
 		}
 
-
+		//Use Item
+		if (Input.GetKeyDown (KartRef.KartInputs.UseItemButton)) {
+			KartRef.KartItem.UseItem ();			
+		}
 	}
 }

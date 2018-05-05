@@ -58,6 +58,10 @@ public class KartAI : MonoBehaviour {
 			KartRef.KartPhysics.RotateAxis = (CalculatedAngle / 10);
 		}
 
+		if (KartRef.KartItem.HoldingItem != null) {
+			KartRef.KartItem.UseItem ();
+		}
+
 	}
 
 	void ResetPos(){

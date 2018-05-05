@@ -9,6 +9,7 @@ public class KartReferences : MonoBehaviour {
 	public KartParams KartParams;
 	public KartEffects KartEffects;
 	public KartPhysics KartPhysics;
+	public KartItem KartItem;
 
 	public Rigidbody RigidBody;
 	public Animator Animator;

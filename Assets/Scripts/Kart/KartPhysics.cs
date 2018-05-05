@@ -11,8 +11,6 @@ public class KartPhysics : MonoBehaviour {
 	[HideInInspector]
 	public float RotateAxis;
 	[HideInInspector]
-	public bool Brake;
-	[HideInInspector]
 	public bool Jump;
 	[HideInInspector]
 	public bool Grounded = true;
