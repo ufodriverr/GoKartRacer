@@ -17,8 +17,6 @@ public class KartPhysics : MonoBehaviour {
 	[HideInInspector]
 	public bool LostControll;
 	[HideInInspector]
-	public float LostControllTimer = 0;
-	[HideInInspector]
 	public int BoostedTimes = 0;
 
 	[HideInInspector]
@@ -97,17 +95,14 @@ public class KartPhysics : MonoBehaviour {
 		curVelLocal = KartRef.KartVisual.InverseTransformPoint(KartRef.KartVisual.transform.position+KartRef.RigidBody.velocity);
 
 		if (LostControll) {
-			if (LostControllTimer == 0) {
-				KartRef.Animator.Play ("LostControll");
-			}
 			Drift = false;
-			LostControllTimer += Time.fixedDeltaTime;
-			if (LostControllTimer >= KartRef.LostControlAnimation.length) {
-				LostControllTimer = 0;
-				LostControll = false;
+			//Add Lost Controll Effect
+			int id = KartRef.KartEffects.FindEffect(cls_Effect.Effect_Type.LostControll);
+			if (id == -1){
+				Effect_LostControll tempEff = gameObject.AddComponent<Effect_LostControll>();
+				tempEff.LongTime = 1;
 			}
 		} else {
-			LostControllTimer = 0;
 			//Forward : Backward
 			float desiredZvel = curVelLocal.z + KartRef.KartParams.CurAcceleration * ZAxis;
 			float desiredZvelABS = Mathf.Abs (desiredZvel);

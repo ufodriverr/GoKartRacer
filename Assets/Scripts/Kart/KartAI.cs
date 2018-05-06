@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(KartReferences))]
 public class KartAI : MonoBehaviour {
 
-	public Transform[] Nodes;
 	int CurNode = 0;
 	bool SetTarget = false;
 	KartReferences KartRef;
@@ -14,6 +13,7 @@ public class KartAI : MonoBehaviour {
 
 	float UPDTtimer = 0;
 	Vector3 PrevPos;
+	public int SpawnPointID = 0;
 
 	void Awake(){
 		KartRef = GetComponent<KartReferences> ();
@@ -34,14 +34,14 @@ public class KartAI : MonoBehaviour {
 			ResetPos ();
 		}
 		if (!SetTarget) {
-			TargetWorld = Nodes [CurNode].position + Nodes [CurNode].right * Random.Range (-0.5f, 0.5f);
+			TargetWorld = Global.Instance.MapNodes [CurNode].position + Global.Instance.MapNodes [CurNode].right * Random.Range (-0.5f, 0.5f);
 			SetTarget = true;
 		}
 		transformedToLocal = transform.InverseTransformPoint (TargetWorld);
 		if (transformedToLocal.z < 0.1f) {
 			SetTarget = false;
 			CurNode++;
-			if (CurNode >= Nodes.Length) {
+			if (CurNode >= Global.Instance.MapNodes.Length) {
 				CurNode = 0;
 			}
 		}
@@ -65,8 +65,8 @@ public class KartAI : MonoBehaviour {
 	}
 
 	void ResetPos(){
-		transform.position = KartRef.PlayerSpawn.position;
-		transform.rotation = KartRef.PlayerSpawn.rotation;
+		transform.position = Global.Instance.MapSpawnPoints[SpawnPointID].transform.position;
+		transform.rotation = Global.Instance.MapSpawnPoints[SpawnPointID].transform.rotation;
 		KartRef.RigidBody.velocity = Vector3.zero;
 		CurNode = 0;
 		SetTarget = false;

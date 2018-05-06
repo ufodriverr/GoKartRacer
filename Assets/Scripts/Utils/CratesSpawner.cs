@@ -14,7 +14,7 @@ public class CratesSpawner : MonoBehaviour {
 			ttimer += Time.deltaTime;
 			if (ttimer > 5) {
 				ttimer = 0;
-				MyCrate = Instantiate (Crate, transform.position, Crate.rotation);
+				MyCrate = Instantiate (Crate, transform.position, Crate.rotation,transform);
 			}
 		}
 	}

@@ -2455,6 +2455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3ec3b8b9845f6458f0d747b0c1d7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoldingItem: {fileID: 0}
 --- !u!114 &114019008275221390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2627,7 +2628,6 @@ MonoBehaviour:
   Jump: 0
   Grounded: 1
   LostControll: 0
-  LostControllTimer: 0
   BoostedTimes: 0
   Drift: 0
   DriftBoost: 0

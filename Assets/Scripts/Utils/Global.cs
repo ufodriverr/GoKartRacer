@@ -14,8 +14,20 @@ public class Global : MonoBehaviour
 	public float SFXVolume = 1;
 	public float MusicVolume = 1;
 
+	public Transform[] MapNodes;
+	public Transform[] MapSpawnPoints;
+
+	public KartAI KartAI;
+
     void Awake()
     {
         instance = this;
+		SpawnAIs ();
     }
+
+	void SpawnAIs(){
+		for (int i = 0; i < MapSpawnPoints.Length; i++) {
+			Instantiate (KartAI,MapSpawnPoints[i].transform.position,MapSpawnPoints[i].transform.rotation).SpawnPointID = i;
+		}
+	}
 }

@@ -17,7 +17,8 @@ public class cls_Effect : MonoBehaviour {
 		Boost,
 		Knockout,
 		SlowDown,
-		SlipperyTires
+		SlipperyTires,
+		LostControll
 	}
 
 }
