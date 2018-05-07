@@ -12,6 +12,10 @@ public class KartPlayer : MonoBehaviour {
 	}
 
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.T)) {
+			
+		}
+
 		//Reset player if falloff
 		if (transform.position.y < -1f || Input.GetKeyDown(KeyCode.R)) {
 			transform.position = KartRef.PlayerSpawn.position;

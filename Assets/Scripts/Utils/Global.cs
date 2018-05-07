@@ -19,6 +19,10 @@ public class Global : MonoBehaviour
 
 	public KartAI KartAI;
 
+	public Rigidbody TntItem;
+
+	public Transform ItemsParent;
+
     void Awake()
     {
         instance = this;

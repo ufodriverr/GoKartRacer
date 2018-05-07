@@ -14,12 +14,12 @@ public class Effect_Boost : cls_Effect {
 	}
 
 	void FixedUpdate(){
-		KartEffects.KartRef.KartParams.CurMaxSpeed += KartEffects.KartRef.KartParams.MaxSpeed * BoostPercent-KartEffects.KartRef.KartParams.MaxSpeed;
+		KartEffects.KartRef.KartParams.CurMaxSpeed += Mathf.Clamp(KartEffects.KartRef.KartParams.MaxSpeed * BoostPercent-KartEffects.KartRef.KartParams.MaxSpeed,0,9999);
 		if (InitAcceleration != 0) {
 			KartEffects.KartRef.KartParams.CurAcceleration = InitAcceleration;
 			InitAcceleration = 0;
 		} else {
-			KartEffects.KartRef.KartParams.CurAcceleration += KartEffects.KartRef.KartParams.Acceleration * BoostPercent-KartEffects.KartRef.KartParams.Acceleration;
+			KartEffects.KartRef.KartParams.CurAcceleration += Mathf.Clamp(KartEffects.KartRef.KartParams.Acceleration * BoostPercent-KartEffects.KartRef.KartParams.Acceleration,0,9999);
 		}
 		ttimer += Time.fixedDeltaTime;
 		if (ttimer >= LongTime) {

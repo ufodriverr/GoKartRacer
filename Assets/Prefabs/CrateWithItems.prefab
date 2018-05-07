@@ -24,7 +24,8 @@ GameObject:
   - component: {fileID: 54476048825215274}
   - component: {fileID: 65953853632664848}
   - component: {fileID: 114278462711968066}
-  - component: {fileID: 114645889367565392}
+  - component: {fileID: 114726232651212114}
+  - component: {fileID: 114902014068412366}
   m_Layer: 0
   m_Name: CrateWithItems
   m_TagString: Untagged
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: {x: 0, y: 60, z: 0}
---- !u!114 &114645889367565392
+--- !u!114 &114726232651212114
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,10 +135,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 1859993119286912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 043b42be690b7684281bf04670f9cf41, type: 3}
+  m_Script: {fileID: 11500000, guid: 19396da83be95c641aa6988b2692f130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KartRef: {fileID: 0}
-  LongTime: 3
-  BoostPercent: 1.5
-  InitAcceleration: 10
+  XCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  YCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  ZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ValuesMult: 0.3
+  Local: 0
+--- !u!114 &114902014068412366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859993119286912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24bf6698a4c4454c825e8c49a19d906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllPossibleItems:
+  - {fileID: 114477397487854268, guid: 31ae4513cf28ea148aa87da18f4d1d2a, type: 2}
+  - {fileID: 114257377175339094, guid: 385bfab6a095962428ec43183d122a58, type: 2}

@@ -1,14 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Utils\Global.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemsCrate.cs">
     <Files>
-      <File FileName="Assets\Scripts\Kart\KartPhysics.cs" Line="102" Column="11" />
-      <File FileName="Assets\Scripts\Effects\Effect_LostControll.cs" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\Effects\cls_Effect.cs" Line="21" Column="15" />
-      <File FileName="Assets\Scripts\Effects\Effect_Boost.cs" Line="10" Column="15" />
-      <File FileName="Assets\Scripts\Utils\CratesSpawner.cs" Line="17" Column="79" />
-      <File FileName="Assets\Scripts\Utils\Global.cs" Line="26" Column="6" />
-      <File FileName="Assets\Scripts\Kart\KartAI.cs" Line="16" Column="25" />
+      <File FileName="Assets\Scripts\Items\Boost_Item1.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\Items\TNT_Item.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\Utils\Global.cs" Line="24" Column="31" />
+      <File FileName="Assets\Scripts\ItemsCrate.cs" Line="25" Column="43" />
+      <File FileName="Assets\Scripts\Items\cls_Item.cs" Line="5" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

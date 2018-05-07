@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Boost_Item1 : cls_Item {
 
-	public float LongTime;
-	public float BoostPercent;
-	public float InitAcceleration;
-
 	public override void UseItem () {
 		int id = KartRef.KartEffects.FindEffect (cls_Effect.Effect_Type.Boost);
 		if (id != -1) {

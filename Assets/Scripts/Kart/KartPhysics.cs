@@ -17,6 +17,8 @@ public class KartPhysics : MonoBehaviour {
 	[HideInInspector]
 	public bool LostControll;
 	[HideInInspector]
+	public bool KnockOut;
+	[HideInInspector]
 	public int BoostedTimes = 0;
 
 	[HideInInspector]
@@ -102,7 +104,15 @@ public class KartPhysics : MonoBehaviour {
 				Effect_LostControll tempEff = gameObject.AddComponent<Effect_LostControll>();
 				tempEff.LongTime = 1;
 			}
-		} else {
+		} else if(KnockOut){
+			Drift = false;
+			//Add KnockOut Effect
+			int id = KartRef.KartEffects.FindEffect(cls_Effect.Effect_Type.Knockout);
+			if (id == -1){
+				Effect_Stunned tempEff = gameObject.AddComponent<Effect_Stunned>();
+				tempEff.LongTime = 2;
+			}
+		} else{
 			//Forward : Backward
 			float desiredZvel = curVelLocal.z + KartRef.KartParams.CurAcceleration * ZAxis;
 			float desiredZvelABS = Mathf.Abs (desiredZvel);
