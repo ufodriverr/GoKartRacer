@@ -23,6 +23,7 @@ public class Effect_Stunned : cls_Effect {
 			KartEffects.KartRef.KartPhysics.LostControll = false;
 			KartEffects.AllEffects.Remove (this);
 			KartEffects.KartRef.Animator.transform.localEulerAngles = Vector3.zero;
+			KartEffects.KartRef.KartPhysics.KnockOut = false;
 			Destroy (this);
 		}
 	}

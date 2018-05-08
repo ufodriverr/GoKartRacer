@@ -25,8 +25,22 @@ public class ItemsCrate : MonoBehaviour {
 	void GiveRandomItem(KartReferences temp){
 		int ItemID = UnityEngine.Random.Range (0, AllPossibleItems.Length);
 		Type ttype = AllPossibleItems [ItemID].GetType ();
-		print (ttype.AssemblyQualifiedName);
+		/*print (ttype.AssemblyQualifiedName);
 		cls_Item Ttemp = temp.gameObject.AddComponent<>(ttype.AssemblyQualifiedName);
+		Ttemp.BoostPercent = AllPossibleItems [ItemID].BoostPercent;
+		Ttemp.InitAcceleration = AllPossibleItems [ItemID].InitAcceleration;
+		Ttemp.LongTime = AllPossibleItems [ItemID].LongTime;
+		temp.KartItem.HoldingItem = Ttemp;*/
+		cls_Item Ttemp = null;
+		switch (ttype.ToString()) {
+			case "Boost_Item1":
+				Ttemp = temp.gameObject.AddComponent<Boost_Item1>();
+				break;
+			case "TNT_Item":
+				Ttemp = temp.gameObject.AddComponent<TNT_Item>();
+				break;
+		}
+		Ttemp.KartRef = temp;
 		Ttemp.BoostPercent = AllPossibleItems [ItemID].BoostPercent;
 		Ttemp.InitAcceleration = AllPossibleItems [ItemID].InitAcceleration;
 		Ttemp.LongTime = AllPossibleItems [ItemID].LongTime;

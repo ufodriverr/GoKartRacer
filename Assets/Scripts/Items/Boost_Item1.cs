@@ -19,7 +19,7 @@ public class Boost_Item1 : cls_Item {
 		}
 	}
 
-	void OnTriggerEnter (Collider coll) {
+	/*void OnTriggerEnter (Collider coll) {
 		KartReferences temp = coll.GetComponentInParent<KartReferences>();
 		if (temp != null) {
 			if (temp.KartItem.HoldingItem == null) {
@@ -31,5 +31,5 @@ public class Boost_Item1 : cls_Item {
 				Destroy (gameObject);
 			}
 		}
-	}
+	}*/
 }

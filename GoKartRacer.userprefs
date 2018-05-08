@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemsCrate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Items\Boost_Item1.cs">
     <Files>
-      <File FileName="Assets\Scripts\Items\Boost_Item1.cs" Line="7" Column="1" />
-      <File FileName="Assets\Scripts\Items\TNT_Item.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\Items\Boost_Item1.cs" Line="26" Column="57" />
+      <File FileName="Assets\Scripts\Items\TNT_Item.cs" Line="7" Column="35" />
       <File FileName="Assets\Scripts\Utils\Global.cs" Line="24" Column="31" />
       <File FileName="Assets\Scripts\ItemsCrate.cs" Line="25" Column="43" />
       <File FileName="Assets\Scripts\Items\cls_Item.cs" Line="5" Column="31" />
+      <File FileName="Assets\Scripts\Effects\Effect_Stunned.cs" Line="16" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
