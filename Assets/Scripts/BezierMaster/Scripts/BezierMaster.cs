@@ -21,9 +21,10 @@ public enum MeshType
 [RequireComponent(typeof(BezierSpline))]
 public class BezierMaster : MonoBehaviour
 {
-#if UNITY_EDITOR
-    public BezierSpline spline;
+	public BezierSpline spline;
 
+#if UNITY_EDITOR
+    
     public bool showCurveEditor;
     public bool showObjectsOptions;
     public bool showAnimationOptions;
