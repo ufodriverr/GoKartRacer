@@ -2671,57 +2671,57 @@
       <param name="go">GameObject to Optimize.</param>
       <param name="exposedTransforms">List of transform name to expose.</param>
     </member>
-    <member name="T:UnityEngine.ArmDoF">
+    <member name="T:UnityEngine.ArmDof">
       <summary>
         <para>Enumeration of all the muscles in an arm.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ArmDownUp">
+    <member name="F:UnityEngine.ArmDof.ArmDownUp">
       <summary>
         <para>The arm down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ArmFrontBack">
+    <member name="F:UnityEngine.ArmDof.ArmFrontBack">
       <summary>
         <para>The arm front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ArmRollInOut">
+    <member name="F:UnityEngine.ArmDof.ArmRollInOut">
       <summary>
         <para>The arm roll in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ForeArmCloseOpen">
+    <member name="F:UnityEngine.ArmDof.ForeArmCloseOpen">
       <summary>
         <para>The forearm close-open muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ForeArmRollInOut">
+    <member name="F:UnityEngine.ArmDof.ForeArmRollInOut">
       <summary>
         <para>The forearm roll in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.HandDownUp">
+    <member name="F:UnityEngine.ArmDof.HandDownUp">
       <summary>
         <para>The hand down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.HandInOut">
+    <member name="F:UnityEngine.ArmDof.HandInOut">
       <summary>
         <para>The hand in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.LastArmDoF">
+    <member name="F:UnityEngine.ArmDof.LastArmDof">
       <summary>
-        <para>The last value of the ArmDoF enum.</para>
+        <para>The last value of the ArmDof enum.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ShoulderDownUp">
+    <member name="F:UnityEngine.ArmDof.ShoulderDownUp">
       <summary>
         <para>The shoulder down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ArmDoF.ShoulderFrontBack">
+    <member name="F:UnityEngine.ArmDof.ShoulderFrontBack">
       <summary>
         <para>The shoulder front-back muscle.</para>
       </summary>
@@ -2996,57 +2996,57 @@
         <para>The root, the position of the game object.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.BodyDoF">
+    <member name="T:UnityEngine.BodyDof">
       <summary>
         <para>Enumeration of all the muscles in the body.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.ChestFrontBack">
+    <member name="F:UnityEngine.BodyDof.ChestFrontBack">
       <summary>
         <para>The chest front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.ChestLeftRight">
+    <member name="F:UnityEngine.BodyDof.ChestLeftRight">
       <summary>
         <para>The chest left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.ChestRollLeftRight">
+    <member name="F:UnityEngine.BodyDof.ChestRollLeftRight">
       <summary>
         <para>The chest roll left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.LastBodyDoF">
+    <member name="F:UnityEngine.BodyDof.LastBodyDof">
       <summary>
-        <para>The last value of the BodyDoF enum.</para>
+        <para>The last value of the BodyDof enum.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.SpineFrontBack">
+    <member name="F:UnityEngine.BodyDof.SpineFrontBack">
       <summary>
         <para>The spine front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.SpineLeftRight">
+    <member name="F:UnityEngine.BodyDof.SpineLeftRight">
       <summary>
         <para>The spine left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.SpineRollLeftRight">
+    <member name="F:UnityEngine.BodyDof.SpineRollLeftRight">
       <summary>
         <para>The spine roll left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.UpperChestFrontBack">
+    <member name="F:UnityEngine.BodyDof.UpperChestFrontBack">
       <summary>
         <para>The upper chest front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.UpperChestLeftRight">
+    <member name="F:UnityEngine.BodyDof.UpperChestLeftRight">
       <summary>
         <para>The upper chest left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.BodyDoF.UpperChestRollLeftRight">
+    <member name="F:UnityEngine.BodyDof.UpperChestRollLeftRight">
       <summary>
         <para>The upper chest roll left-right muscle.</para>
       </summary>
@@ -3071,62 +3071,55 @@
         <para>The humanoid stream of animation data passed from one Playable to another.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.bodyLocalPosition">
+      <summary>
+        <para>The position of the body center of mass relative to the root.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.bodyLocalRotation">
+      <summary>
+        <para>The rotation of the body center of mass relative to the root.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.bodyPosition">
+      <summary>
+        <para>The position of the body center of mass in world space.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.bodyRotation">
+      <summary>
+        <para>The rotation of the body center of mass in world space.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.humanScale">
       <summary>
-        <para>Returns the scale of the current Avatar.</para>
+        <para>The scale of the Avatar. (Read Only)</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.isValid">
+      <summary>
+        <para>Returns true if the stream is valid; false otherwise. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.leftFootHeight">
       <summary>
-        <para>Returns left foot height.</para>
+        <para>The left foot height from the floor. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.leftFootVelocity">
       <summary>
-        <para>Returns the left foot velocity for the last evaluated frame.</para>
+        <para>The left foot velocity from the last evaluated frame. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.rightFootHeight">
       <summary>
-        <para>Returns right foot height.</para>
+        <para>The right foot height from the floor. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationHumanStream.rightFootVelocity">
       <summary>
-        <para>Returns the right foot velocity for the last evaluated frame.</para>
+        <para>The right foot velocity from the last evaluated frame. (Read Only)</para>
       </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.GetBodyLocalPosition">
-      <summary>
-        <para>Returns the position of the body center of mass relative to the root.</para>
-      </summary>
-      <returns>
-        <para>The position of the body center of mass.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.GetBodyLocalRotation">
-      <summary>
-        <para>Returns the rotation of the body center of mass relative to the root.</para>
-      </summary>
-      <returns>
-        <para>The rotation of the body center of mass.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.GetBodyPosition">
-      <summary>
-        <para>Returns the position of the body center of mass in world space.</para>
-      </summary>
-      <returns>
-        <para>The position of the body center of mass.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.GetBodyRotation">
-      <summary>
-        <para>Returns the rotation of the body center of mass in world space.</para>
-      </summary>
-      <returns>
-        <para>The rotation of the body center of mass.</para>
-      </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.GetGoalLocalPosition(UnityEngine.AvatarIKGoal)">
       <summary>
@@ -3227,39 +3220,10 @@
         <para>The muscle value.</para>
       </returns>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.IKSolve">
+    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.ResetToStancePose">
       <summary>
-        <para>Execute the IK solver.</para>
+        <para>Reset the current pose to the stance pose (T Pose).</para>
       </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.IsValid">
-      <summary>
-        <para>Returns whether or not the AnimationHumanStream is valid.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetBodyLocalPosition(UnityEngine.Vector3)">
-      <summary>
-        <para>Sets the position of the body center of mass relative to the root.</para>
-      </summary>
-      <param name="value">The position of the body center of mass.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetBodyLocalRotation(UnityEngine.Quaternion)">
-      <summary>
-        <para>Sets the rotation of the body center of mass relative to the root.</para>
-      </summary>
-      <param name="value">The rotation of the body center of mass.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetBodyPosition(UnityEngine.Vector3)">
-      <summary>
-        <para>Sets the position of the body center of mass in world space.</para>
-      </summary>
-      <param name="value">The position of the body center of mass.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetBodyRotation(UnityEngine.Quaternion)">
-      <summary>
-        <para>Sets the rotation of the body center of mass in world space.</para>
-      </summary>
-      <param name="value">The rotation of the body center of mass.</param>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetGoalLocalPosition(UnityEngine.AvatarIKGoal,UnityEngine.Vector3)">
       <summary>
@@ -3354,9 +3318,9 @@
       <param name="muscle">The Muscle that is queried.</param>
       <param name="value">The muscle value.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SetStancePose">
+    <member name="M:UnityEngine.Experimental.Animations.AnimationHumanStream.SolveIK">
       <summary>
-        <para>Reset the current pose to the stance pose (T Pose).</para>
+        <para>Execute the IK solver.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.Experimental.Animations.AnimationScriptPlayable">
@@ -3371,16 +3335,17 @@
       <param name="graph">The PlayableGraph object that will own the AnimationScriptPlayable.</param>
       <param name="job">The IAnimationJob to execute when processing the playable.</param>
       <param name="inputCount">The number of inputs on the playable.</param>
+      <param name="jobData"></param>
       <returns>
         <para>A new AnimationScriptPlayable linked to the PlayableGraph.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationScriptPlayable.GetJobData">
       <summary>
-        <para>Returns the job contained in the playable.</para>
+        <para>Gets the job data contained in the playable.</para>
       </summary>
       <returns>
-        <para>The IAnimationJob contained in the playable.</para>
+        <para>Returns the IAnimationJob data contained in the playable.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationScriptPlayable.GetProcessInputs">
@@ -3393,9 +3358,9 @@
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationScriptPlayable.SetJobData(T)">
       <summary>
-        <para>Sets a new job in the playable.</para>
+        <para>Sets a new job data in the playable.</para>
       </summary>
-      <param name="value">The new IAnimationJob to set in the playable.</param>
+      <param name="jobData">The new IAnimationJob data to set in the playable.</param>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationScriptPlayable.SetProcessInputs(System.Boolean)">
       <summary>
@@ -3418,19 +3383,19 @@
         <para>Gets the delta time for the evaluated frame. (Read Only)</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Experimental.Animations.AnimationStream.humanStream">
+    <member name="P:UnityEngine.Experimental.Animations.AnimationStream.inputStreamCount">
       <summary>
-        <para>Gets the human stream associated with the stream. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Animations.AnimationStream.inputCount">
-      <summary>
-        <para>Gets the number of inputs of the playable associated with the stream. (Read Only)</para>
+        <para>Gets the number of input streams. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationStream.isHumanStream">
       <summary>
-        <para>Returns whether or not the stream is from a humanoid avatar. (Read Only)</para>
+        <para>Returns true if the stream is from a humanoid avatar; false otherwise. (Read Only)</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Animations.AnimationStream.isValid">
+      <summary>
+        <para>Returns true if the stream is valid; false otherwise. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Animations.AnimationStream.rootMotionPosition">
@@ -3448,21 +3413,21 @@
         <para>Gets or sets the avatar velocity for the evaluated frame.</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.Experimental.Animations.AnimationStream.AsHuman">
+      <summary>
+        <para>Gets the same stream, but as an AnimationHumanStream.</para>
+      </summary>
+      <returns>
+        <para>Returns the same stream, but as an AnimationHumanStream.</para>
+      </returns>
+    </member>
     <member name="M:UnityEngine.Experimental.Animations.AnimationStream.GetInputStream(System.Int32)">
       <summary>
         <para>Gets the AnimationStream of the playable input at index.</para>
       </summary>
       <param name="index">The input index.</param>
       <returns>
-        <para>The AnimationStream of the playable input at index.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Animations.AnimationStream.IsValid">
-      <summary>
-        <para>Returns whether or not the AnimationStream is valid.</para>
-      </summary>
-      <returns>
-        <para>Whether or not the AnimationStream is valid.</para>
+        <para>Returns the AnimationStream of the playable input at index. Returns an invalid stream if the input is not an animation Playable.</para>
       </returns>
     </member>
     <member name="T:UnityEngine.Experimental.Animations.AnimatorJobExtensions">
@@ -3567,17 +3532,17 @@
     </member>
     <member name="M:UnityEngine.Experimental.Animations.IAnimationJobPlayable.GetJobData">
       <summary>
-        <para>Returns the job contained in the playable.</para>
+        <para>Gets the job data contained in the playable.</para>
       </summary>
       <returns>
-        <para>The IAnimationJob contained in the playable.</para>
+        <para>Returns the IAnimationJob data contained in the playable.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.IAnimationJobPlayable.SetJobData(T)">
       <summary>
-        <para>Sets a new job in the playable.</para>
+        <para>Sets a new job data in the playable.</para>
       </summary>
-      <param name="value">The new IAnimationJob to set in the playable.</param>
+      <param name="jobData">The new IAnimationJob data to set in the playable.</param>
     </member>
     <member name="T:UnityEngine.Experimental.Animations.MuscleHandle">
       <summary>
@@ -3589,12 +3554,12 @@
         <para>The muscle human sub-part. (Read Only)</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Experimental.Animations.MuscleHandle.humanPartDoF">
+    <member name="P:UnityEngine.Experimental.Animations.MuscleHandle.humanPartDof">
       <summary>
         <para>The muscle human part. (Read Only)</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Experimental.Animations.MuscleHandle.muscleHandlesCount">
+    <member name="P:UnityEngine.Experimental.Animations.MuscleHandle.muscleHandleCount">
       <summary>
         <para>The total number of DoF parts in a humanoid. (Read Only)</para>
       </summary>
@@ -3604,82 +3569,82 @@
         <para>The name of the muscle. (Read Only)</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.BodyDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.BodyDof)">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HeadDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HeadDof)">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDoF,UnityEngine.BodyDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDoF,UnityEngine.HeadDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDoF,UnityEngine.LegDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDof,UnityEngine.LegDof)">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDoF,UnityEngine.ArmDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDof,UnityEngine.ArmDof)">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
-    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDoF,UnityEngine.FingerDoF)">
+    <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.#ctor(UnityEngine.HumanPartDof,UnityEngine.FingerDof)">
       <summary>
         <para>The different constructors that creates the muscle handle.</para>
       </summary>
-      <param name="bodyDoF">The muscle body sub-part.</param>
-      <param name="headDoF">The muscle head sub-part.</param>
-      <param name="partDoF">The muscle human part.</param>
-      <param name="legDoF">The muscle leg sub-part.</param>
-      <param name="armDoF">The muscle arm sub-part.</param>
-      <param name="fingerDoF">The muscle finger sub-part.</param>
+      <param name="bodyDof">The muscle body sub-part.</param>
+      <param name="headDof">The muscle head sub-part.</param>
+      <param name="partDof">The muscle human part.</param>
+      <param name="legDof">The muscle leg sub-part.</param>
+      <param name="armDof">The muscle arm sub-part.</param>
+      <param name="fingerDof">The muscle finger sub-part.</param>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.MuscleHandle.GetMuscleHandles(UnityEngine.Experimental.Animations.MuscleHandle[])">
       <summary>
@@ -3725,7 +3690,7 @@
       </summary>
       <param name="stream">The AnimationStream managing this handle.</param>
       <returns>
-        <para>Whether or not the handle is resolved.</para>
+        <para>Returns true if the handle is resolved, false otherwise.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.PropertySceneHandle.IsValid(UnityEngine.Experimental.Animations.AnimationStream)">
@@ -3802,7 +3767,7 @@
       </summary>
       <param name="stream">The AnimationStream holding the animated values.</param>
       <returns>
-        <para>Whether or not the handle is resolved.</para>
+        <para>Returns true if the handle is resolved, false otherwise.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.PropertyStreamHandle.IsValid(UnityEngine.Experimental.Animations.AnimationStream)">
@@ -3991,7 +3956,7 @@
       </summary>
       <param name="stream">The AnimationStream that hold the animated values.</param>
       <returns>
-        <para>Whether this handle is resolved.</para>
+        <para>Returns true if the handle is resolved, false otherwise.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Experimental.Animations.TransformStreamHandle.IsValid(UnityEngine.Experimental.Animations.AnimationStream)">
@@ -4044,102 +4009,102 @@
       <param name="stream">The AnimationStream that hold the animated values.</param>
       <param name="rotation">The rotation of the transform in world space.</param>
     </member>
-    <member name="T:UnityEngine.FingerDoF">
+    <member name="T:UnityEngine.FingerDof">
       <summary>
         <para>Enumeration of all the muscles in a finger.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.FingerDoF.DistalCloseOpen">
+    <member name="F:UnityEngine.FingerDof.DistalCloseOpen">
       <summary>
         <para>The distal close-open muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.FingerDoF.IntermediateCloseOpen">
+    <member name="F:UnityEngine.FingerDof.IntermediateCloseOpen">
       <summary>
         <para>The intermediate close-open muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.FingerDoF.LastFingerDoF">
+    <member name="F:UnityEngine.FingerDof.LastFingerDof">
       <summary>
-        <para>The last value of the FingerDoF enum.</para>
+        <para>The last value of the FingerDof enum.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.FingerDoF.ProximalDownUp">
+    <member name="F:UnityEngine.FingerDof.ProximalDownUp">
       <summary>
         <para>The proximal down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.FingerDoF.ProximalInOut">
+    <member name="F:UnityEngine.FingerDof.ProximalInOut">
       <summary>
         <para>The proximal in-out muscle.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.HeadDoF">
+    <member name="T:UnityEngine.HeadDof">
       <summary>
         <para>Enumeration of all the muscles in the head.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.HeadFrontBack">
+    <member name="F:UnityEngine.HeadDof.HeadFrontBack">
       <summary>
         <para>The head front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.HeadLeftRight">
+    <member name="F:UnityEngine.HeadDof.HeadLeftRight">
       <summary>
         <para>The head left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.HeadRollLeftRight">
+    <member name="F:UnityEngine.HeadDof.HeadRollLeftRight">
       <summary>
         <para>The head roll left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.JawDownUp">
+    <member name="F:UnityEngine.HeadDof.JawDownUp">
       <summary>
         <para>The jaw down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.JawLeftRight">
+    <member name="F:UnityEngine.HeadDof.JawLeftRight">
       <summary>
         <para>The jaw left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.LastHeadDoF">
+    <member name="F:UnityEngine.HeadDof.LastHeadDof">
       <summary>
-        <para>The last value of the HeadDoF enum.</para>
+        <para>The last value of the HeadDof enum.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.LeftEyeDownUp">
+    <member name="F:UnityEngine.HeadDof.LeftEyeDownUp">
       <summary>
         <para>The left eye down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.LeftEyeInOut">
+    <member name="F:UnityEngine.HeadDof.LeftEyeInOut">
       <summary>
         <para>The left eye in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.NeckFrontBack">
+    <member name="F:UnityEngine.HeadDof.NeckFrontBack">
       <summary>
         <para>The neck front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.NeckLeftRight">
+    <member name="F:UnityEngine.HeadDof.NeckLeftRight">
       <summary>
         <para>The neck left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.NeckRollLeftRight">
+    <member name="F:UnityEngine.HeadDof.NeckRollLeftRight">
       <summary>
         <para>The neck roll left-right muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.RightEyeDownUp">
+    <member name="F:UnityEngine.HeadDof.RightEyeDownUp">
       <summary>
         <para>The right eye down-up muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HeadDoF.RightEyeInOut">
+    <member name="F:UnityEngine.HeadDof.RightEyeInOut">
       <summary>
         <para>The right eye in-out muscle.</para>
       </summary>
@@ -4534,87 +4499,87 @@
         <para>Should this limit use the default values?</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.HumanPartDoF">
+    <member name="T:UnityEngine.HumanPartDof">
       <summary>
         <para>Enumeration of all the parts in a human.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.Body">
+    <member name="F:UnityEngine.HumanPartDof.Body">
       <summary>
         <para>The human body part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.Head">
+    <member name="F:UnityEngine.HumanPartDof.Head">
       <summary>
         <para>The human head part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftArm">
+    <member name="F:UnityEngine.HumanPartDof.LeftArm">
       <summary>
         <para>The human left arm part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftIndex">
+    <member name="F:UnityEngine.HumanPartDof.LeftIndex">
       <summary>
         <para>The human left index finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftLeg">
+    <member name="F:UnityEngine.HumanPartDof.LeftLeg">
       <summary>
         <para>The human left leg part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftLittle">
+    <member name="F:UnityEngine.HumanPartDof.LeftLittle">
       <summary>
         <para>The human left little finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftMiddle">
+    <member name="F:UnityEngine.HumanPartDof.LeftMiddle">
       <summary>
         <para>The human left middle finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftRing">
+    <member name="F:UnityEngine.HumanPartDof.LeftRing">
       <summary>
         <para>The human left ring finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.LeftThumb">
+    <member name="F:UnityEngine.HumanPartDof.LeftThumb">
       <summary>
         <para>The human left thumb finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightArm">
+    <member name="F:UnityEngine.HumanPartDof.RightArm">
       <summary>
         <para>The human right arm part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightIndex">
+    <member name="F:UnityEngine.HumanPartDof.RightIndex">
       <summary>
         <para>The human right index finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightLeg">
+    <member name="F:UnityEngine.HumanPartDof.RightLeg">
       <summary>
         <para>The human right leg part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightLittle">
+    <member name="F:UnityEngine.HumanPartDof.RightLittle">
       <summary>
         <para>The human right little finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightMiddle">
+    <member name="F:UnityEngine.HumanPartDof.RightMiddle">
       <summary>
         <para>The human right middle finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightRing">
+    <member name="F:UnityEngine.HumanPartDof.RightRing">
       <summary>
         <para>The human right ring finger part.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.HumanPartDoF.RightThumb">
+    <member name="F:UnityEngine.HumanPartDof.RightThumb">
       <summary>
         <para>The human right thumb finger part.</para>
       </summary>
@@ -4742,52 +4707,52 @@
         <para>The number of bone types that are required by Mecanim for any human model.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.LegDoF">
+    <member name="T:UnityEngine.LegDof">
       <summary>
         <para>Enumeration of all the muscles in a leg.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.FootCloseOpen">
+    <member name="F:UnityEngine.LegDof.FootCloseOpen">
       <summary>
         <para>The foot close-open muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.FootInOut">
+    <member name="F:UnityEngine.LegDof.FootInOut">
       <summary>
         <para>The foot in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.LastLegDoF">
+    <member name="F:UnityEngine.LegDof.LastLegDof">
       <summary>
-        <para>The last value of the LegDoF enum.</para>
+        <para>The last value of the LegDof enum.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.LegCloseOpen">
+    <member name="F:UnityEngine.LegDof.LegCloseOpen">
       <summary>
         <para>The leg close-open muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.LegRollInOut">
+    <member name="F:UnityEngine.LegDof.LegRollInOut">
       <summary>
         <para>The leg roll in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.ToesUpDown">
+    <member name="F:UnityEngine.LegDof.ToesUpDown">
       <summary>
         <para>The toes up-down muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.UpperLegFrontBack">
+    <member name="F:UnityEngine.LegDof.UpperLegFrontBack">
       <summary>
         <para>The upper leg front-back muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.UpperLegInOut">
+    <member name="F:UnityEngine.LegDof.UpperLegInOut">
       <summary>
         <para>The upper leg in-out muscle.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.LegDoF.UpperLegRollInOut">
+    <member name="F:UnityEngine.LegDof.UpperLegRollInOut">
       <summary>
         <para>The upper leg roll in-out muscle.</para>
       </summary>

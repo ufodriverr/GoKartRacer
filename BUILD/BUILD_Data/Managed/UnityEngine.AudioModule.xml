@@ -157,10 +157,24 @@
         <para>A new AudioPlayableOutput attached to the PlayableGraph.</para>
       </returns>
     </member>
+    <member name="M:UnityEngine.Audio.AudioPlayableOutput.GetEvaluateOnSeek">
+      <summary>
+        <para>Gets the state of output playback when seeking.</para>
+      </summary>
+      <returns>
+        <para>Returns true if the output plays when seeking. Returns false otherwise.</para>
+      </returns>
+    </member>
     <member name="P:UnityEngine.Audio.AudioPlayableOutput.Null">
       <summary>
         <para>Returns an invalid AudioPlayableOutput.</para>
       </summary>
+    </member>
+    <member name="M:UnityEngine.Audio.AudioPlayableOutput.SetEvaluateOnSeek(System.Boolean)">
+      <summary>
+        <para>Controls whether the output should play when seeking.</para>
+      </summary>
+      <param name="value">Set to true to play the output when seeking. Set to false to disable audio scrubbing on this output. Default is true.</param>
     </member>
     <member name="T:UnityEngine.AudioChorusFilter">
       <summary>
