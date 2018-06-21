@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetworkTestV2.cs">
     <Files>
-      <File FileName="Assets\Scripts\NetworkTest.cs" Line="74" Column="29" />
-      <File FileName="Assets\Scripts\NetworkTestV2.cs" Line="62" Column="11" />
+      <File FileName="Assets\Scripts\NetworkTest.cs" Line="129" Column="42" />
+      <File FileName="Assets\Scripts\NetworkTestV2.cs" Line="105" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class NetworkTestV2 : MonoBehaviour {
 
@@ -29,20 +31,33 @@ public class NetworkTestV2 : MonoBehaviour {
 	int connectionId; 
 
 	bool StartRecieve = false;
+	int myReliableChannelId;
+	int myUnreliableChannelId;
+	int connectionId2=-1;
+	int recHostId; 
 
 	void Start(){
 		pingList = new List<float> ();
 	}
 
 	void Update(){
+		if (pingList.Count > 0) {
+			NetPing = 0;
+			for (int i = 0; i < pingList.Count; i++) {
+				NetPing += pingList [i];
+			}
+			NetPing /= pingList.Count;
+			if (pingList.Count > 10) {
+				pingList.RemoveAt (0);
+			}
+		}
 		if(StartRecieve){
-			int recHostId; 
-			int connectionId2; 
 			int channelId; 
 			byte[] recBuffer = new byte[1024]; 
 			int bufferSize = 1024;
 			int dataSize;
 			byte error;
+
 			NetworkEventType recData = NetworkTransport.Receive(out recHostId, out connectionId2, out channelId, recBuffer, bufferSize, out dataSize, out error);
 			switch (recData){
 			case NetworkEventType.Nothing:
@@ -52,6 +67,20 @@ public class NetworkTestV2 : MonoBehaviour {
 				print ("ConnectEvent");
 				break;
 			case NetworkEventType.DataEvent:
+				Stream stream = new MemoryStream (recBuffer);
+				BinaryFormatter formatter = new BinaryFormatter ();
+				string message = formatter.Deserialize (stream) as string;
+				print ("incoming message event received: " + message);
+				if (message == "Ping") {
+					byte[] buffer = new byte[1024];
+					Stream sstream = new MemoryStream(buffer);
+					formatter.Serialize(sstream, "Pong");
+					NetworkTransport.Send(hostId, connectionId, myReliableChannelId, buffer, bufferSize, out error);
+				}
+				if (message == "Pong") {
+					pingList.Add(Mathf.Round(((Time.time - pingtime)*1000)/2));
+					SendPing = true;
+				}
 				print ("DataEvent");
 				break;
 			case NetworkEventType.DisconnectEvent:
@@ -62,6 +91,16 @@ public class NetworkTestV2 : MonoBehaviour {
 				break;
 			}
 
+			if (SendPing && connectionId2!=-1) {
+				print ("SendPing");
+				pingtime = Time.time;
+				SendPing = false;
+				byte[] buffer = new byte[1024];
+				Stream stream = new MemoryStream(buffer);
+				BinaryFormatter formatter = new BinaryFormatter();
+				formatter.Serialize(stream, "Ping");
+				NetworkTransport.Send(recHostId, connectionId2, myReliableChannelId, buffer, bufferSize, out error);
+			}
 		}
 	}
 
@@ -99,8 +138,8 @@ public class NetworkTestV2 : MonoBehaviour {
 		gConfig.MaxPacketSize = 1500;
 		NetworkTransport.Init(gConfig);
 		config = new ConnectionConfig();
-		int myReliableChannelId  = config.AddChannel(QosType.Reliable);
-		int myUnreliableChannelId = config.AddChannel(QosType.Unreliable);
+		myReliableChannelId  = config.AddChannel(QosType.Reliable);
+		myUnreliableChannelId = config.AddChannel(QosType.Unreliable);
 		topology = new HostTopology(config, 10);
 
 	}

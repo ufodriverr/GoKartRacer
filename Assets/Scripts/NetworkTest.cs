@@ -33,9 +33,17 @@ public class NetworkTest : MonoBehaviour {
 	float pingtime = 0;
 	bool SendPing = true;
 
+	//public NetworkManager NetworkManager;
+
 	void Start(){
 		pingList = new List<float> ();
+		//NetworkManager.globalConfig.ThreadAwakeTimeout = 1;
+		//GlobalConfig.ThreadAwakeTimeout  = 0;
 	}
+
+	/*static void  ChangeConf(){
+		UnityEngine.Networking.GlobalConfig.ThreadAwakeTimeout  = 0;
+	}*/
 
 	public void StartServer(){
 		if (CurCor == null) {
@@ -79,6 +87,7 @@ public class NetworkTest : MonoBehaviour {
 		config.PacketSize = 1500;
 		config.SendDelay = 0;
 		config.AckDelay = 0;
+		config.MinUpdateTimeout = 1;
 		NetworkServer.Configure (config,8);
 		NetworkServer.Listen (port);
 		NetworkServer.RegisterHandler (MsgType.Connect,OnSConnected);
